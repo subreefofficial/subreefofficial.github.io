@@ -4,18 +4,21 @@ html, body {
     width: initial;
     font-family: 'Montserrat', sans-serif;
 	letter-spacing: 3px;
+	background-color: #f5f2f0;
 }
 
 .navbar {
 	margin: 0;
+	background-color: white;
 }
 
 .navbar-nav {
-	padding-top: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .navbar-toggle {
-	padding-top: 25px;
+	padding-top: 15px;
 }
 
 .icon-bar {
@@ -34,6 +37,15 @@ html, body {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 15.4px;
+}
+
+.logo {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 30px;
+	letter-spacing: -1px;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-style: italic;
 }
 
 .left {
@@ -107,7 +119,6 @@ html, body {
 .slider {
 	margin: 0;
 	padding: 0;
-	background-color: white;
 }
 
 .forms {
@@ -165,21 +176,12 @@ html, body {
 		z-index: 20;
 		backface-visibility: hidden;
 		align-content: center;
-		margin-left: 40%;
-		margin-top: 50px;
-	}
-	.title {
-		font-family: 'Montserrat', sans-serif;
-		letter-spacing: 2px;
-		font-weight: bold;
-		padding-top: 15px;
-		color: black;
-		margin-left: 78%;
+		margin-left: 15%;
+		margin-top: 20px;
 	}
 	.slider {
 		margin: 0;
 		padding: 0;
-		background-color: white;
 	}
 	.forms {
 		padding-left: 50px;
@@ -198,5 +200,3 @@ html, body {
 	  color: white;
 	}
 }
-
-
