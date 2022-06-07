@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<nav class="navbar">
+<nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,20 +27,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <p class="logo">SUBREEF.</p>
+      <p class="logo" onclick="window.location.href='index.html'">SUBREEF.</p>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">HOME</a></li>
+        <li class="active"><a href="index.html">HOME</a></li>
         <li><a href="#">SHOP</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT US</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container-fluid no-space">
+<div class="container-fluid no-space"><br><br><br>
   <div class="row imgfit">
   <div class="col-xs-12 col-lg-6 left">
     <img class="img-responsive imgfit" src="https://i.gyazo.com/4fd7e54fcd17cad1c63ac6d341959387.jpg">
@@ -60,22 +60,22 @@
   <br>
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-lg-3 text-center">
-      <a href="#"><img class="img-circle" src="https://i.gyazo.com/878fa2ca039b7b02e027f3208197fae4.jpg"></a>
+      <a href="about.html"><img class="img-circle" src="https://i.gyazo.com/878fa2ca039b7b02e027f3208197fae4.jpg"></a>
       <p class="title">Our History</p>
       <br><br>
     </div>
     <div class="col-xs-12 col-sm-6 col-lg-3 text-center">
-      <a href="#"><img class="img-circle" src="https://i.gyazo.com/af6359de4a5dc94f655b24f4598c2e07.png"></a>
+      <a href="faq.html"><img class="img-circle" src="https://i.gyazo.com/af6359de4a5dc94f655b24f4598c2e07.png"></a>
       <p class="title">FAQ</p>
       <br><br>
     </div>
     <div class="col-xs-12 col-sm-6 col-lg-3 text-center">
-      <a href="#"><img class="img-circle" src="https://i.gyazo.com/06e377a159a9c47ed63cd60953059185.jpg"></a>
+      <a href="shop.html"><img class="img-circle" src="https://i.gyazo.com/06e377a159a9c47ed63cd60953059185.jpg"></a>
       <p class="title">Shop</p>
       <br><br>
     </div>
     <div class="col-xs-12 col-sm-6 col-lg-3 text-center">
-      <a href="#"><img class="img-circle" src="https://i.gyazo.com/105f83a306d3ed0e282846de4a316659.jpg"></a>
+      <a href="contact.html"><img class="img-circle" src="https://i.gyazo.com/105f83a306d3ed0e282846de4a316659.jpg"></a>
       <p class="title">Contact Us</p>
       <br><br>
     </div>
@@ -123,7 +123,7 @@
     <p class="text-center">Hit us up!</p>
     <br>
     <div class="container forms">
-      <form>
+      <form action="" method="post">
         <div class="form-group">
           <input type="name" class="form-control" id="name" placeholder="Name">
         </div>
@@ -134,7 +134,7 @@
           <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
         </div>
         <div class="text-right">
-          <button type="submit" class="btn btn-default">SEND</button>
+          <button type="submit" class="btn btn-block" style="background-color: #D3D3D3;">SEND</button>
         </div>
       </form>
         <div class="text-center">
@@ -153,16 +153,38 @@
         Copyright © 2022 Subreef Official - All Rights Reserved.
       </p>
       <br><br>
-      <a href="#" class="links">CONTACT US</a>
-      <a href="#" class="links">SIZE GUIDE</a>
-      <a href="#" class="links">SHIPPING</a>
-      <a href="#" class="links">FAQ</a>
-      <a href="#" class="links">PRIVACY POLICY</a>
-      <a href="#" class="links">TERMS AND CONDITIONS</a>
+      <a href="contact.html" class="links">CONTACT US</a>
+      <a href="sizes.html" class="links">SIZE GUIDE</a>
+      <a href="shipping.html" class="links">SHIPPING</a>
+      <a href="faq.html" class="links">FAQ</a>
+      <a href="privacy.html" class="links">PRIVACY POLICY</a>
+      <a href="terms.html" class="links">TERMS AND CONDITIONS</a>
     </footer>
   </div>
 
 </div>
+
+<script type="text/javascript">
+  <?php 
+    if(isset($_POST['submit'])){
+        $to = "subreefofficial@gmail.com"; // this is your Email address
+        $from = $_POST['email']; // this is the sender's Email address
+        $name = $_POST['name'];
+        $subject = "MAIN PAGE CONTACT";
+        $subject2 = "NEW SUBMISSION";
+        $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+        $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+        $headers = "From:" . $from;
+        $headers2 = "From:" . $to;
+        mail($to,$subject,$message,$headers);
+        mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+        echo "Thank you " . $name . ", we will contact you within 24 hours. Feel free to message us on WhatsApp for a faster reply";
+        // You can also use header('Location: thank_you.php'); to redirect to another page.
+        // You cannot use header and echo together. It's one or the other.
+        }
+  ?>
+</script>
 
 </body>
 </html>
