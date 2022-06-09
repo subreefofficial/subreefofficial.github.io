@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="mystyle.css">
-  <link rel="script" href="script.js">
+  <script language="javascript" src="script.js"></script>
 </head>
 
-<body>
+<body oncontextmenu="return false">
 <nav class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -32,7 +32,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="index.html">HOME</a></li>
-        <li><a href="#">SHOP</a></li>
+        <li><a href="shop.html">SHOP</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
@@ -163,28 +163,6 @@
   </div>
 
 </div>
-
-<script type="text/javascript">
-  <?php 
-    if(isset($_POST['submit'])){
-        $to = "subreefofficial@gmail.com"; // this is your Email address
-        $from = $_POST['email']; // this is the sender's Email address
-        $name = $_POST['name'];
-        $subject = "MAIN PAGE CONTACT";
-        $subject2 = "NEW SUBMISSION";
-        $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-        $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
-
-        $headers = "From:" . $from;
-        $headers2 = "From:" . $to;
-        mail($to,$subject,$message,$headers);
-        mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-        echo "Thank you " . $name . ", we will contact you within 24 hours. Feel free to message us on WhatsApp for a faster reply";
-        // You can also use header('Location: thank_you.php'); to redirect to another page.
-        // You cannot use header and echo together. It's one or the other.
-        }
-  ?>
-</script>
 
 </body>
 </html>
