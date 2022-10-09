@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SUBREEF OFFICIAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="mystyle.css">
+  <script language="javascript" src="script.js"></script>
+</head>
+
+<body class="white-box" oncontextmenu="return false">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      <p class="logo" onclick="window.location.href='index.html'">SUBREEF.</p>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li class="active"><a href="shop.html">SHOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid no-space white-box"><br><br><br>
+    <hr><br><br>
+    <div class="row">
+      <div class="col-xs-12 col-lg-12">
+          <a class="linkss" style="text-decoration: none;" href="shop.html"> < All Products</a>
+          <br><br><br>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-5">
+          <img class="img-responsive" src="https://i.etsystatic.com/36093660/r/il/6893ff/4236562370/il_1588xN.4236562370_2hg8.jpg">
+        </div>
+        <div class="col-xs-12 col-md-5 topping">
+          <h2>SUBREEF CAMO</h2>
+          <br>
+          <p>$48.00</p>
+          <br><br>
+          <p>Size</p>
+          <br>
+          <button type="button" class="btn btn-default">S</button>
+          <button type="button" class="btn btn-default">M</button>
+          <button type="button" class="btn btn-default">LG</button>
+          <button type="button" class="btn btn-default">XL</button>
+          <button type="button" class="btn btn-default">XXL</button>
+          <br><br><br>
+          <button type="button" class="btn" style="background-color: #D3D3D3;"><a href="https://www.etsy.com/listing/1321959643/subreef-camo?click_key=be20071e1ab4b32ee77c552ce7207931256c9972%3A1321959643&click_sum=24d95693&ref=shop_home_active_1">BUY</a></button>
+        </div>
+      </div>
+      
+      <div class="col-xs-12 col-lg-12">
+        <hr>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/0685c8a454c69582c5b0aa78f8c3b6a4.jpg">
+        <br>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/2467616b5bd548169b687537cefe2e4c.jpg">
+        <br>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/9c3dedff0cec0450a239b57f8105a55e.jpg">
+        <br>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/bc022425dba2b438fdb2d50725f1065d.jpg">
+        <br>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/62925e9702cadda7035482fe72bb06fa.jpg">
+        <br>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/dad60ec7011547975e2ba990df44e155.jpg">
+        <br>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/e898d49e2041961d27125e0d6d51fc09.jpg">
+        <br>
+        <img class="img-responsive center-block" src="https://i.gyazo.com/1d78efc0dd127c300d5fa042ef4709a9.jpg">
+        <br>
+      </div>
+
+    </div>
+    <br><br><br><br>
+    <footer class="footer text-center">
+      <br><br><br>
+      <p class="Copyright">
+        Copyright © 2022 Subreef Official - All Rights Reserved.
+      </p>
+      <br><br>
+      <a href="contact.html" class="links">CONTACT US</a>
+      <a href="sizes.html" class="links">SIZE GUIDE</a>
+      <a href="shipping.html" class="links">SHIPPING</a>
+      <a href="faq.html" class="links">FAQ</a>
+      <a href="privacy.html" class="links">PRIVACY POLICY</a>
+      <a href="terms.html" class="links">TERMS AND CONDITIONS</a>
+    </footer>
+  </div>
+
+</body>
+</html>
